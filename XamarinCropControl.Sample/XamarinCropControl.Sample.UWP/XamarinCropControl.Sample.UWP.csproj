@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{757529F3-FDB5-4412-87BB-2DBFBF39240D}</ProjectGuid>
+    <ProjectGuid>{E90732A0-96C4-4657-8D52-94BEDF3C827B}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XamarinCropControl.Sample.UWP</RootNamespace>
@@ -127,16 +127,14 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinCropControl.Sample\XamarinCropControl.Sample.csproj">
+      <Project>{4176bdcd-cf53-4a0a-9a0a-e4deeca4eab2}</Project>
+      <Name>XamarinCropControl.Sample</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
-  <Import Project="..\XamarinCropControl.Sample\XamarinCropControl.Sample.projitems" Label="Shared" Condition="Exists('..\XamarinCropControl.Sample\XamarinCropControl.Sample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
